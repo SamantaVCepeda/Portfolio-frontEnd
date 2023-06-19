@@ -123,3 +123,17 @@
   position: relative;
   bottom: 4px;
 }
+
+/* Responsive */
+
+@media screen and (max-width:700px){
+  .curriculum .fila {
+    display: block;
+  }
+  .curriculum .fila .columna {
+    width: 90%;
+  }
+  .curriculum .fila .derecha {
+    margin-left: 20px;
+  }
+}

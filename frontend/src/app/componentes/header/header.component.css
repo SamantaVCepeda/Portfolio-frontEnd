@@ -30,7 +30,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
+  padding: 15px 0px;
 }
 
 .logo {
@@ -39,7 +39,6 @@ html {
 }
 
 .contenedor .header ul {
-  position: absolute;
   display: flex;
   list-style: none;
 }
@@ -59,13 +58,12 @@ html {
 
 /* Button */
 
-.contenedor .header nav button {
+.contenedor .header nav ul li button {
   cursor: pointer;
   background-color: transparent;
   border: 2px solid #fff;
   width: fit-content;
   display: block;
-  margin-left: 570px;
   padding: 5px 10px;
   font-size: 16px;
   color: #fff;
@@ -73,7 +71,7 @@ html {
   z-index: 10;
 }
 
-.contenedor .header nav button .overlay {
+.contenedor .header nav ul li button .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -84,9 +82,9 @@ html {
   transition: 1s;
 }
 
-.contenedor .header nav button:hover .overlay {
+.contenedor .header nav ul li button:hover .overlay {
   width: 100%;
-}
+} 
 
 .nav-responsive {
   background-color: #1CB698;
@@ -153,4 +151,30 @@ html {
 
 .inicio .contenido-banner .redes a:hover {
   background-color: #1CB698;
+}
+
+/* Responsive */
+
+@media screen and (max-width:980px) {
+  nav {
+    display: none;
+  }
+  .nav-responsive {
+    display: block;
+  }
+  nav.responsive {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 75px;
+    background-color: #252A2E;
+    width: 180px;
+  }
+  nav.responsive ul {
+    display: block !important;
+  }
+  nav.responsive ul li {
+    border-bottom: 1px solid #fff;
+    padding: 10px 0;
+  }
 }

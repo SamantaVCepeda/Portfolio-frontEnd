@@ -162,3 +162,17 @@
   0%{width: 0%;}
   100%{width: 30%;}
 }
+
+/* Responsive */
+
+@media screen and (max-width:700px) {
+  .skills .fila {
+flex-direction: column;
+  }
+  .skills .fila .columna {
+    width: 100%;
+  }
+  .skills .fila .columna .barra-skill {
+    width: 100%;
+  }  
+}
