@@ -7,23 +7,22 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  // Funcion para mostrar el menu 
+
   mostrarOcultarMenu() {
     let menuVisible: boolean = false;
-    const navElement = document.getElementById("nav");
+    const navElement : HTMLElement | null = document.getElementById("nav");
   
-    if (navElement) {
       if (menuVisible) {
-        navElement.classList.remove("responsive");
+        navElement?.classList.remove("responsive");
         menuVisible = false;
       } else {
-        navElement.classList.add("responsive");
+        navElement?.classList.add("responsive");
         menuVisible = true;
       }
     }
-  }
 
-
-  // Funcion que oculta el manu una vez que es seleccionada una opcion
+  // Funcion que oculta el menu una vez que es seleccionada una opcion
 
   seleccionar(){
     let menuVisible: boolean = false;
